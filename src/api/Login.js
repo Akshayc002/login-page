@@ -16,9 +16,7 @@ function Login(
   };
 
   if (token != null) {
-    const headers = {
-      Authorization: `Basic ${token}`, // Replace with any necessary authentication headers
-    };
+    headers.Authorization= `Basic ${token}`; // Replace with any necessary authentication headers
   }
 
   const xmlBody = `<?xml version="1.0" encoding="UTF-8"?>
